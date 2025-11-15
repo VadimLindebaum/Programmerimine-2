@@ -1,0 +1,10 @@
+C:\Users\vadli\Downloads\eShop-main\eShop-main\src\eShop.ServiceDefaults\bin\Debug\net10.0\eShop.ServiceDefaults.deps.json
+C:\Users\vadli\Downloads\eShop-main\eShop-main\src\eShop.ServiceDefaults\bin\Debug\net10.0\eShop.ServiceDefaults.dll
+C:\Users\vadli\Downloads\eShop-main\eShop-main\src\eShop.ServiceDefaults\obj\Debug\net10.0\eShop.ServiceDefaults.csproj.AssemblyReference.cache
+C:\Users\vadli\Downloads\eShop-main\eShop-main\src\eShop.ServiceDefaults\obj\Debug\net10.0\eShop.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vadli\Downloads\eShop-main\eShop-main\src\eShop.ServiceDefaults\obj\Debug\net10.0\eShop.ServiceDefaults.AssemblyInfoInputs.cache
+C:\Users\vadli\Downloads\eShop-main\eShop-main\src\eShop.ServiceDefaults\obj\Debug\net10.0\eShop.ServiceDefaults.AssemblyInfo.cs
+C:\Users\vadli\Downloads\eShop-main\eShop-main\src\eShop.ServiceDefaults\obj\Debug\net10.0\eShop.ServiceDefaults.csproj.CoreCompileInputs.cache
+C:\Users\vadli\Downloads\eShop-main\eShop-main\src\eShop.ServiceDefaults\obj\Debug\net10.0\eShop.ServiceDefaults.dll
+C:\Users\vadli\Downloads\eShop-main\eShop-main\src\eShop.ServiceDefaults\obj\Debug\net10.0\refint\eShop.ServiceDefaults.dll
+C:\Users\vadli\Downloads\eShop-main\eShop-main\src\eShop.ServiceDefaults\obj\Debug\net10.0\ref\eShop.ServiceDefaults.dll
