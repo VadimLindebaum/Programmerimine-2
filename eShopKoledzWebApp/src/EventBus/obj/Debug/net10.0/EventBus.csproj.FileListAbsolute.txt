@@ -1,0 +1,10 @@
+C:\Users\vadli\Downloads\eShop-main\eShop-main\src\EventBus\bin\Debug\net10.0\EventBus.deps.json
+C:\Users\vadli\Downloads\eShop-main\eShop-main\src\EventBus\bin\Debug\net10.0\EventBus.dll
+C:\Users\vadli\Downloads\eShop-main\eShop-main\src\EventBus\obj\Debug\net10.0\EventBus.csproj.AssemblyReference.cache
+C:\Users\vadli\Downloads\eShop-main\eShop-main\src\EventBus\obj\Debug\net10.0\EventBus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vadli\Downloads\eShop-main\eShop-main\src\EventBus\obj\Debug\net10.0\EventBus.AssemblyInfoInputs.cache
+C:\Users\vadli\Downloads\eShop-main\eShop-main\src\EventBus\obj\Debug\net10.0\EventBus.AssemblyInfo.cs
+C:\Users\vadli\Downloads\eShop-main\eShop-main\src\EventBus\obj\Debug\net10.0\EventBus.csproj.CoreCompileInputs.cache
+C:\Users\vadli\Downloads\eShop-main\eShop-main\src\EventBus\obj\Debug\net10.0\EventBus.dll
+C:\Users\vadli\Downloads\eShop-main\eShop-main\src\EventBus\obj\Debug\net10.0\refint\EventBus.dll
+C:\Users\vadli\Downloads\eShop-main\eShop-main\src\EventBus\obj\Debug\net10.0\ref\EventBus.dll
