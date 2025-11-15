@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "dgSpecHash": "YISDA64L5dk=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vadli\\Downloads\\eShop-main\\eShop-main\\src\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vadli\\.nuget\\packages\\mediatr\\13.0.0\\mediatr.13.0.0.nupkg.sha512",
+    "C:\\Users\\vadli\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\vadli\\.nuget\\packages\\microsoft.entityframeworkcore\\10.0.0-rc.1.25451.107\\microsoft.entityframeworkcore.10.0.0-rc.1.25451.107.nupkg.sha512",
+    "C:\\Users\\vadli\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\10.0.0-rc.1.25451.107\\microsoft.entityframeworkcore.abstractions.10.0.0-rc.1.25451.107.nupkg.sha512",
+    "C:\\Users\\vadli\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\10.0.0-rc.1.25451.107\\microsoft.entityframeworkcore.analyzers.10.0.0-rc.1.25451.107.nupkg.sha512",
+    "C:\\Users\\vadli\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\10.0.0-rc.1.25451.107\\microsoft.entityframeworkcore.relational.10.0.0-rc.1.25451.107.nupkg.sha512",
+    "C:\\Users\\vadli\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\10.0.0-rc.1.25451.107\\microsoft.extensions.caching.abstractions.10.0.0-rc.1.25451.107.nupkg.sha512",
+    "C:\\Users\\vadli\\.nuget\\packages\\microsoft.extensions.caching.memory\\10.0.0-rc.1.25451.107\\microsoft.extensions.caching.memory.10.0.0-rc.1.25451.107.nupkg.sha512",
+    "C:\\Users\\vadli\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.0-rc.1.25451.107\\microsoft.extensions.configuration.abstractions.10.0.0-rc.1.25451.107.nupkg.sha512",
+    "C:\\Users\\vadli\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\10.0.0-rc.1.25451.107\\microsoft.extensions.dependencyinjection.10.0.0-rc.1.25451.107.nupkg.sha512",
+    "C:\\Users\\vadli\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.0-rc.1.25451.107\\microsoft.extensions.dependencyinjection.abstractions.10.0.0-rc.1.25451.107.nupkg.sha512",
+    "C:\\Users\\vadli\\.nuget\\packages\\microsoft.extensions.logging\\10.0.0-rc.1.25451.107\\microsoft.extensions.logging.10.0.0-rc.1.25451.107.nupkg.sha512",
+    "C:\\Users\\vadli\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.0-rc.1.25451.107\\microsoft.extensions.logging.abstractions.10.0.0-rc.1.25451.107.nupkg.sha512",
+    "C:\\Users\\vadli\\.nuget\\packages\\microsoft.extensions.options\\10.0.0-rc.1.25451.107\\microsoft.extensions.options.10.0.0-rc.1.25451.107.nupkg.sha512",
+    "C:\\Users\\vadli\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.0-rc.1.25451.107\\microsoft.extensions.primitives.10.0.0-rc.1.25451.107.nupkg.sha512",
+    "C:\\Users\\vadli\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.0.1\\microsoft.identitymodel.abstractions.8.0.1.nupkg.sha512",
+    "C:\\Users\\vadli\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.0.1\\microsoft.identitymodel.jsonwebtokens.8.0.1.nupkg.sha512",
+    "C:\\Users\\vadli\\.nuget\\packages\\microsoft.identitymodel.logging\\8.0.1\\microsoft.identitymodel.logging.8.0.1.nupkg.sha512",
+    "C:\\Users\\vadli\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.0.1\\microsoft.identitymodel.tokens.8.0.1.nupkg.sha512",
+    "C:\\Users\\vadli\\.nuget\\packages\\npgsql\\9.0.3\\npgsql.9.0.3.nupkg.sha512",
+    "C:\\Users\\vadli\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\10.0.0-rc.1\\npgsql.entityframeworkcore.postgresql.10.0.0-rc.1.nupkg.sha512",
+    "C:\\Users\\vadli\\.nuget\\packages\\system.reflection.typeextensions\\4.7.0\\system.reflection.typeextensions.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
