@@ -34,8 +34,8 @@ Car Rental Website is a Razor Pages-based Car Rental web application built with 
 1. **Clone the Repository**
 
 ```bash
-git clone  
-cd CarRentalWebsite
+git clone  https://github.com/VadimLindebaum/Programmerimine-2.git
+cd KoledzCarRentailWebsite
 ```
 
 2. **Dependencies**
