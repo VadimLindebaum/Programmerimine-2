@@ -1,21 +1,18 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 using KooliProjekt.Application.Data;
-using KooliProjekt.Application.Data.Repositories;
 using KooliProjekt.Application.Infrastructure.Results;
 using MediatR;
 
 namespace KooliProjekt.Application.Features.ToDoLists
 {
-    // 28.11
-    // Kasutab IToDoListRepositoryt
     public class SaveToDoListCommandHandler : IRequestHandler<SaveToDoListCommand, OperationResult>
     {
-        private readonly IToDoListRepository _toDoListRepository;
+        private readonly ApplicationDbContext _dbContext;
 
-        public SaveToDoListCommandHandler(IToDoListRepository toDoListRepository)
+        public SaveToDoListCommandHandler(ApplicationDbContext dbContext)
         {
-            _toDoListRepository = toDoListRepository;
+            _dbContext = dbContext;
         }
 
         public async Task<OperationResult> Handle(SaveToDoListCommand request, CancellationToken cancellationToken)
@@ -23,14 +20,18 @@ namespace KooliProjekt.Application.Features.ToDoLists
             var result = new OperationResult();
 
             var list = new ToDoList();
-            if(request.Id != 0)
+            if(request.Id == 0)
             {
-                list = await _toDoListRepository.GetByIdAsync(request.Id);
+                await _dbContext.ToDoLists.AddAsync(list);
+            }
+            else
+            {
+                list = await _dbContext.ToDoLists.FindAsync(request.Id);
             }
 
             list.Title = request.Title;
 
-            await _toDoListRepository.SaveAsync(list);
+            await _dbContext.SaveChangesAsync();
 
             return result;
         }

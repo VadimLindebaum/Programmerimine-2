@@ -3,9 +3,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace KooliProjekt.Application.Data
 {
-    // 28.11 Pärib Entity klassist
-    public class ToDoList : Entity
+    public class ToDoList
     {
+        public int Id { get; set; }
 
         [Required]
         [MaxLength(50)]
