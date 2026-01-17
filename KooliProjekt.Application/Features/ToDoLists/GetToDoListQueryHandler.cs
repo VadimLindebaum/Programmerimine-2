@@ -1,41 +1,60 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using KooliProjekt.Application.Data;
-using KooliProjekt.Application.Data.Repositories;
+using KooliProjekt.Application.Dto;
 using KooliProjekt.Application.Infrastructure.Results;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
 namespace KooliProjekt.Application.Features.ToDoLists
 {
-    // 28.11
-    // Kasutab IToDoListRepositoryt
-    public class GetToDoListQueryHandler : IRequestHandler<GetToDoListQuery, OperationResult<object>>
+    // 16.01.2026 - ToDoListDetailsDto
+    public class GetToDoListQueryHandler : IRequestHandler<GetToDoListQuery, OperationResult<ToDoListDetailsDto>>
     {
-        private readonly IToDoListRepository _toDoListRepository;
+        private readonly ApplicationDbContext _dbContext;
 
-        public GetToDoListQueryHandler(IToDoListRepository toDoListRepository)
+        public GetToDoListQueryHandler(ApplicationDbContext dbContext)
         {
-            _toDoListRepository = toDoListRepository;
+            if(dbContext == null)
+            {
+                throw new ArgumentNullException(nameof(dbContext));
+            }
+
+            _dbContext = dbContext;
         }
 
-        public async Task<OperationResult<object>> Handle(GetToDoListQuery request, CancellationToken cancellationToken)
+        public async Task<OperationResult<ToDoListDetailsDto>> Handle(GetToDoListQuery request, CancellationToken cancellationToken)
         {
-            var result = new OperationResult<object>();
-            var list = await _toDoListRepository.GetByIdAsync(request.Id);
+            var result = new OperationResult<ToDoListDetailsDto>();            
 
-            result.Value = new // Anonymous object
+            if (request == null)
             {
-                Id = list.Id,
-                Title = list.Title,
-                Items = list.Items.Select(item => new
+                return result;
+            }
+
+            if(request.Id <= 0)
+            {
+                return result;
+            }
+
+            result.Value = await _dbContext
+                .ToDoLists
+                .Include(list => list.Items)
+                .Where(list => list.Id == request.Id)
+                .Select(list => new ToDoListDetailsDto
                 {
-                    Id = item.Id,
-                    Title = item.Title,
-                    IsDone = item.IsDone
+                    Id = list.Id,
+                    Title = list.Title,
+                    Items = list.Items.Select(item => new ToDoItemDto
+                    {
+                        Id = item.Id,
+                        Title = item.Title,
+                        IsDone = item.IsDone
+                    }).ToList()
                 })
-            };
+                .FirstOrDefaultAsync();
 
             return result;
         }

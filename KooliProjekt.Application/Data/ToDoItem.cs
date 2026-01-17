@@ -2,10 +2,9 @@
 
 namespace KooliProjekt.Application.Data
 {
-    // 28.11
-    // Pärib Entity klassist
-    public class ToDoItem : Entity
+    public class ToDoItem
     {
+        public int Id { get; set; }
 
         [Required]
         [StringLength(50)]
