@@ -29,8 +29,6 @@ namespace KooliProjekt.Application.Features.ToDoLists
 
                     //context.AddFailure(failure);
                 });
-
-
         }
     }
 }

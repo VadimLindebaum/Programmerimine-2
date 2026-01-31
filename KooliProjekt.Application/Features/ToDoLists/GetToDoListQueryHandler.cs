@@ -27,14 +27,14 @@ namespace KooliProjekt.Application.Features.ToDoLists
 
         public async Task<OperationResult<ToDoListDetailsDto>> Handle(GetToDoListQuery request, CancellationToken cancellationToken)
         {
-            var result = new OperationResult<ToDoListDetailsDto>();            
-
             if (request == null)
             {
-                return result;
-            }
+                throw new ArgumentNullException(nameof(request));
+            }            
 
-            if(request.Id <= 0)
+            var result = new OperationResult<ToDoListDetailsDto>();
+
+            if (request.Id <= 0)
             {
                 return result;
             }

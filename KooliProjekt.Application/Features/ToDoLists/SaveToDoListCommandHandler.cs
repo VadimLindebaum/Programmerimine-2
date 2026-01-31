@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 using KooliProjekt.Application.Data;
 using KooliProjekt.Application.Infrastructure.Results;
@@ -12,12 +13,26 @@ namespace KooliProjekt.Application.Features.ToDoLists
 
         public SaveToDoListCommandHandler(ApplicationDbContext dbContext)
         {
+            if (dbContext == null)
+            {
+                throw new ArgumentNullException(nameof(dbContext));
+            }
+
             _dbContext = dbContext;
         }
 
         public async Task<OperationResult> Handle(SaveToDoListCommand request, CancellationToken cancellationToken)
         {
+            if (request == null)
+            {
+                throw new ArgumentNullException(nameof(request));
+            }
+
             var result = new OperationResult();
+            if(request.Id < 0)
+            {
+                return result.AddPropertyError(nameof(request.Id), "Id cannot be negative.");
+            }
 
             var list = new ToDoList();
             if(request.Id == 0)
@@ -27,6 +42,10 @@ namespace KooliProjekt.Application.Features.ToDoLists
             else
             {
                 list = await _dbContext.ToDoLists.FindAsync(request.Id);
+                if(list == null)
+                {
+                    return result.AddPropertyError(nameof(request.Id), "ToDoList with the specified Id does not exist.");
+                }
             }
 
             list.Title = request.Title;
