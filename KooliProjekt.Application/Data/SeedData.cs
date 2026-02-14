@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,7 @@ namespace KooliProjekt.Application.Data
 {
     // 15.11.2025
     // SeedData klass andmete genereerimiseks
+    [ExcludeFromCodeCoverage]
     public class SeedData
     {
         private readonly ApplicationDbContext _dbContext;

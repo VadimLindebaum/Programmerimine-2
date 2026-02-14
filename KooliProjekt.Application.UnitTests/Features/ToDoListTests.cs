@@ -1,4 +1,5 @@
-﻿using KooliProjekt.Application.Data;
+﻿using FluentValidation.Results;
+using KooliProjekt.Application.Data;
 using KooliProjekt.Application.Features.ToDoLists;
 using Microsoft.EntityFrameworkCore;
 using Xunit;
@@ -359,6 +360,42 @@ namespace KooliProjekt.Application.UnitTests.Features
             Assert.NotNull(result);
             Assert.True(result.HasErrors);
             Assert.Null(savedList);
+        }
+
+        [Theory]
+        [InlineData("")]
+        [InlineData(null)]
+        [InlineData("01234567890123456789012345678901234567890123456789000")]
+        public async Task SaveValidator_should_fail_when_title_is_invalid(string title)
+        {
+            // Arrange
+            var command = new SaveToDoListCommand { Title = title };
+            var validator = new SaveToDoListCommandValidator(DbContext);
+
+            // Act
+            var result = await validator.ValidateAsync(command);
+
+            // Assert
+            Assert.NotNull(result);
+            Assert.False(result.IsValid);
+
+            var error = result.Errors.First();
+            Assert.Equal(nameof(SaveToDoListCommand.Title), error.PropertyName);
+        }
+
+        [Fact]
+        public async Task SaveValidator_should_succeed_when_title_is_valid()
+        {
+            // Arrange
+            var command = new SaveToDoListCommand { Title = "Test list" };
+            var validator = new SaveToDoListCommandValidator(DbContext);
+
+            // Act
+            var result = await validator.ValidateAsync(command);
+
+            // Assert
+            Assert.NotNull(result);
+            Assert.True(result.IsValid);
         }
     }
 }

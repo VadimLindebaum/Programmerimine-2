@@ -37,8 +37,26 @@ namespace KooliProjekt.Application.Features.ToDoLists
                 return result;
             }
 
-            result.Value = await _dbContext
-                .ToDoLists
+            var query = _dbContext.ToDoLists.AsQueryable();
+
+            if(!string.IsNullOrEmpty(request.Title))
+            {
+                query = query.Where(list => list.Title.Contains(request.Title));
+            }
+
+            if(request.IsDone.HasValue)
+            {
+                if(request.IsDone.Value)
+                {
+                    query = query.Where(list => list.Items.All(item => item.IsDone));
+                }
+                else
+                { 
+                    query = query.Where(list => list.Items.Any(item => !item.IsDone));
+                }
+            }
+
+            result.Value = await query
                 .OrderBy(list => list.Title)
                 .GetPagedAsync(request.Page, request.PageSize);
 

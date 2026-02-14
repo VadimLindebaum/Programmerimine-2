@@ -213,33 +213,11 @@ var assemblies = [
   {
     "name": "KooliProjekt.Application",
     "classes": [
-      { "name": "KooliProjekt.Application.Behaviors.ErrorHandlingBehavior<T1, T2>", "rp": "KooliProjekt.Application_ErrorHandlingBehavior_2.html", "cl": 0, "ucl": 16, "cal": 16, "tl": 41, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "KooliProjekt.Application.Behaviors.TransactionalBehavior<T1, T2>", "rp": "KooliProjekt.Application_TransactionalBehavior_2.html", "cl": 0, "ucl": 20, "cal": 20, "tl": 47, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "KooliProjekt.Application.Behaviors.ValidationBehavior<T1, T2>", "rp": "KooliProjekt.Application_ValidationBehavior_2.html", "cl": 0, "ucl": 22, "cal": 22, "tl": 49, "cb": 0, "tb": 8, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "KooliProjekt.Application.Data.ApplicationDbContext", "rp": "KooliProjekt.Application_ApplicationDbContext.html", "cl": 5, "ucl": 0, "cal": 5, "tl": 14, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "KooliProjekt.Application.Data.PagingExtensions", "rp": "KooliProjekt.Application_PagingExtensions.html", "cl": 0, "ucl": 21, "cal": 21, "tl": 39, "cb": 0, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "KooliProjekt.Application.Data.SeedData", "rp": "KooliProjekt.Application_SeedData.html", "cl": 0, "ucl": 38, "cal": 38, "tl": 68, "cb": 0, "tb": 8, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "KooliProjekt.Application.Data.ToDoItem", "rp": "KooliProjekt.Application_ToDoItem.html", "cl": 1, "ucl": 4, "cal": 5, "tl": 17, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "KooliProjekt.Application.Data.ToDoList", "rp": "KooliProjekt.Application_ToDoList.html", "cl": 6, "ucl": 1, "cal": 7, "tl": 23, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "KooliProjekt.Application.Dto.ToDoItemDto", "rp": "KooliProjekt.Application_ToDoItemDto.html", "cl": 0, "ucl": 3, "cal": 3, "tl": 9, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "KooliProjekt.Application.Dto.ToDoListDetailsDto", "rp": "KooliProjekt.Application_ToDoListDetailsDto.html", "cl": 3, "ucl": 0, "cal": 3, "tl": 11, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "KooliProjekt.Application.Features.ToDoLists.DeleteToDoListCommand", "rp": "KooliProjekt.Application_DeleteToDoListCommand.html", "cl": 1, "ucl": 0, "cal": 1, "tl": 13, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "KooliProjekt.Application.Features.ToDoLists.DeleteToDoListCommandHandler", "rp": "KooliProjekt.Application_DeleteToDoListCommandHandler.html", "cl": 29, "ucl": 0, "cal": 29, "tl": 71, "cb": 8, "tb": 8, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "KooliProjekt.Application.Features.ToDoLists.GetToDoListQuery", "rp": "KooliProjekt.Application_GetToDoListQuery.html", "cl": 1, "ucl": 0, "cal": 1, "tl": 12, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "KooliProjekt.Application.Features.ToDoLists.DeleteToDoListCommandHandler", "rp": "KooliProjekt.Application_DeleteToDoListCommandHandler.html", "cl": 27, "ucl": 0, "cal": 27, "tl": 64, "cb": 8, "tb": 8, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "KooliProjekt.Application.Features.ToDoLists.GetToDoListQueryHandler", "rp": "KooliProjekt.Application_GetToDoListQueryHandler.html", "cl": 33, "ucl": 0, "cal": 33, "tl": 62, "cb": 6, "tb": 6, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "KooliProjekt.Application.Features.ToDoLists.ListToDoListsQuery", "rp": "KooliProjekt.Application_ListToDoListsQuery.html", "cl": 0, "ucl": 2, "cal": 2, "tl": 13, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "KooliProjekt.Application.Features.ToDoLists.ListToDoListsQueryHandler", "rp": "KooliProjekt.Application_ListToDoListsQueryHandler.html", "cl": 0, "ucl": 12, "cal": 12, "tl": 33, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "KooliProjekt.Application.Features.ToDoLists.SaveToDoListCommand", "rp": "KooliProjekt.Application_SaveToDoListCommand.html", "cl": 0, "ucl": 2, "cal": 2, "tl": 12, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "KooliProjekt.Application.Features.ToDoLists.SaveToDoListCommandHandler", "rp": "KooliProjekt.Application_SaveToDoListCommandHandler.html", "cl": 0, "ucl": 18, "cal": 18, "tl": 39, "cb": 0, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "KooliProjekt.Application.Features.ToDoLists.SaveToDoListCommandValidator", "rp": "KooliProjekt.Application_SaveToDoListCommandValidator.html", "cl": 0, "ucl": 22, "cal": 22, "tl": 36, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "KooliProjekt.Application.Infrastructure.Paging.PagedResult<T>", "rp": "KooliProjekt.Application_PagedResult_1.html", "cl": 0, "ucl": 5, "cal": 5, "tl": 14, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "KooliProjekt.Application.Infrastructure.Paging.PagedResultBase", "rp": "KooliProjekt.Application_PagedResultBase.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 11, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "KooliProjekt.Application.Infrastructure.Results.LookupItem<T>", "rp": "KooliProjekt.Application_LookupItem_1.html", "cl": 0, "ucl": 2, "cal": 2, "tl": 8, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "KooliProjekt.Application.Infrastructure.Results.OperationResult", "rp": "KooliProjekt.Application_OperationResult.html", "cl": 6, "ucl": 22, "cal": 28, "tl": 52, "cb": 3, "tb": 12, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "KooliProjekt.Application.Infrastructure.Results.OperationResult<T>", "rp": "KooliProjekt.Application_OperationResult_1.html", "cl": 2, "ucl": 12, "cal": 14, "tl": 28, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "KooliProjekt.Application.Migrations.ApplicationDbContextModelSnapshot", "rp": "KooliProjekt.Application_ApplicationDbContextModelSnapshot.html", "cl": 0, "ucl": 62, "cal": 62, "tl": 86, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "KooliProjekt.Application.Migrations.DataAnnotations", "rp": "KooliProjekt.Application_DataAnnotations.html", "cl": 0, "ucl": 102, "cal": 102, "tl": 147, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "KooliProjekt.Application.Migrations.Initial", "rp": "KooliProjekt.Application_Initial.html", "cl": 0, "ucl": 102, "cal": 102, "tl": 148, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "KooliProjekt.Application.Features.ToDoLists.ListToDoListsQueryHandler", "rp": "KooliProjekt.Application_ListToDoListsQueryHandler.html", "cl": 21, "ucl": 0, "cal": 21, "tl": 48, "cb": 8, "tb": 8, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "KooliProjekt.Application.Features.ToDoLists.SaveToDoListCommandHandler", "rp": "KooliProjekt.Application_SaveToDoListCommandHandler.html", "cl": 30, "ucl": 0, "cal": 30, "tl": 58, "cb": 10, "tb": 10, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "KooliProjekt.Application.Features.ToDoLists.SaveToDoListCommandValidator", "rp": "KooliProjekt.Application_SaveToDoListCommandValidator.html", "cl": 22, "ucl": 0, "cal": 22, "tl": 34, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
     ]},
 ];
 
@@ -248,17 +226,9 @@ var metrics = [{ "name": "Crap Score", "abbreviation": "crp", "explanationUrl": 
 var historicCoverageExecutionTimes = [];
 
 var riskHotspotMetrics = [
-      { "name": "Crap Score", "explanationUrl": "https://googletesting.blogspot.de/2011/02/this-code-is-crap.html" },
-      { "name": "Cyclomatic complexity", "explanationUrl": "https://en.wikipedia.org/wiki/Cyclomatic_complexity" },
 ];
 
 var riskHotspots = [
-  {
-    "assembly": "KooliProjekt.Application", "class": "KooliProjekt.Application.Behaviors.ValidationBehavior<T1, T2>", "reportPath": "KooliProjekt.Application_ValidationBehavior_2.html", "methodName": "Handle()", "methodShortName": "Handle()", "fileIndex": 0, "line": 24,
-    "metrics": [
-      { "value": 72, "exceeded": true },
-      { "value": 8, "exceeded": false },
-    ]},
 ];
 
 var branchCoverageAvailable = true;
