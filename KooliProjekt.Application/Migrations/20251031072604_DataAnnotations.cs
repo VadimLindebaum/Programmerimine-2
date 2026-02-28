@@ -1,12 +1,10 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
 namespace KooliProjekt.Application.Migrations
 {
     /// <inheritdoc />
-    [ExcludeFromCodeCoverage]
     public partial class DataAnnotations : Migration
     {
         /// <inheritdoc />

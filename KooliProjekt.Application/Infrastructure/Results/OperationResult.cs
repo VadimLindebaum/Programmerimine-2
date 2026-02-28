@@ -1,9 +1,7 @@
 ﻿using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 
 namespace KooliProjekt.Application.Infrastructure.Results
 {
-    [ExcludeFromCodeCoverage]
     public class OperationResult
     {
         public IDictionary<string, string> PropertyErrors { get; private set; }

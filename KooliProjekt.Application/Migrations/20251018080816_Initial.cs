@@ -1,15 +1,13 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
 namespace KooliProjekt.Application.Migrations
 {
     /// <inheritdoc />
-    [ExcludeFromCodeCoverage]
     public partial class Initial : Migration
     {
-        /// <inheritdoc />        
+        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Diagnostics.CodeAnalysis;
 using System.Threading;
 using System.Threading.Tasks;
 using KooliProjekt.Application.Infrastructure.Results;
@@ -9,7 +8,6 @@ using Microsoft.Extensions.Logging;
 
 namespace KooliProjekt.Application.Behaviors
 {
-    [ExcludeFromCodeCoverage]
     public class ErrorHandlingBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TResponse : OperationResult, new()
     {
         private readonly ILogger<ErrorHandlingBehavior<TRequest, TResponse>> _logger;

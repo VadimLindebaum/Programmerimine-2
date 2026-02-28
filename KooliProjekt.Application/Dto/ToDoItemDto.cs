@@ -1,8 +1,5 @@
-﻿using System.Diagnostics.CodeAnalysis;
-
-namespace KooliProjekt.Application.Dto
+﻿namespace KooliProjekt.Application.Dto
 {
-    [ExcludeFromCodeCoverage]
     public class ToDoItemDto
     {
         public int Id { get; set; }
