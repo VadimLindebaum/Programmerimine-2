@@ -3,21 +3,35 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>disable</ImplicitUsings>
-    <Nullable>disable</Nullable>
+    <Nullable>disable</Nullable>                    
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentValidation" Version="12.0.0" />
-    <PackageReference Include="MediatR" Version="13.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.21" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.3" />
-	<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.21" />
-	<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.21" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.21" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.21">
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
+    <PackageReference Include="MediatR" Version="14.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="11.0.0-preview.2.26159.112" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.5" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="10.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.5">
       
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\KooliProjekt.Domain\KooliProjekt.Domain.csproj" />
+    <ProjectReference Include="..\KooliProjekt.Infrastructure\KooliProjekt.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
+$version = "10.0.100"
+@"
+{
+  "sdk": {
+    "version": "$version",
+    "rollForward": "latestFeature"
+  }
+}
+"@ | Set-Content -Path global.json -Encoding UTF8
