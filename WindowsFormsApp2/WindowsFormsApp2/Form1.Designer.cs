@@ -29,12 +29,14 @@
         private void InitializeComponent()
         {
             this.txtId = new System.Windows.Forms.TextBox();
-            this.txtBrand = new System.Windows.Forms.TextBox();
+            this.txtYear = new System.Windows.Forms.TextBox();
             this.txtModel = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.dataGridCars = new System.Windows.Forms.DataGridView();
+            this.btnLoad = new System.Windows.Forms.Button();
+            this.txtMake = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridCars)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,13 +48,13 @@
             this.txtId.TabIndex = 0;
             this.txtId.Text = "ID";
             // 
-            // txtBrand
+            // txtYear
             // 
-            this.txtBrand.Location = new System.Drawing.Point(419, 286);
-            this.txtBrand.Name = "txtBrand";
-            this.txtBrand.Size = new System.Drawing.Size(284, 22);
-            this.txtBrand.TabIndex = 1;
-            this.txtBrand.Text = "Brand";
+            this.txtYear.Location = new System.Drawing.Point(419, 286);
+            this.txtYear.Name = "txtYear";
+            this.txtYear.Size = new System.Drawing.Size(284, 22);
+            this.txtYear.TabIndex = 1;
+            this.txtYear.Text = "Brand";
             // 
             // txtModel
             // 
@@ -99,17 +101,36 @@
             this.dataGridCars.Size = new System.Drawing.Size(390, 267);
             this.dataGridCars.TabIndex = 6;
             // 
+            // btnLoad
+            // 
+            this.btnLoad.Location = new System.Drawing.Point(524, 415);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(75, 23);
+            this.btnLoad.TabIndex = 7;
+            this.btnLoad.Text = "Load";
+            this.btnLoad.UseVisualStyleBackColor = true;
+            // 
+            // txtMake
+            // 
+            this.txtMake.Location = new System.Drawing.Point(419, 206);
+            this.txtMake.Name = "txtMake";
+            this.txtMake.Size = new System.Drawing.Size(283, 22);
+            this.txtMake.TabIndex = 8;
+            this.txtMake.Text = "Make";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtMake);
+            this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.dataGridCars);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtModel);
-            this.Controls.Add(this.txtBrand);
+            this.Controls.Add(this.txtYear);
             this.Controls.Add(this.txtId);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -122,12 +143,14 @@
         #endregion
 
         private System.Windows.Forms.TextBox txtId;
-        private System.Windows.Forms.TextBox txtBrand;
+        private System.Windows.Forms.TextBox txtYear;
         private System.Windows.Forms.TextBox txtModel;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.DataGridView dataGridCars;
+        private System.Windows.Forms.Button btnLoad;
+        private System.Windows.Forms.TextBox txtMake;
     }
 }
 

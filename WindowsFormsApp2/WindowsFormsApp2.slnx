@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="Koledz.MyWebApi/Koledz.MyWebApi.csproj" />
   <Project Path="WindowsFormsApp2/WindowsFormsApp2.csproj" Id="20beaada-05df-4f33-a9fd-afaf1ed52c5a" />
 </Solution>

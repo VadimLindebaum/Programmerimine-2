@@ -12,7 +12,11 @@ namespace WindowsFormsApp2.Controllers
         private static List<Car> cars = new List<Car>
         {
             new Car { Id = 1, Brand = "BMW", Model = "320" },
-            new Car { Id = 2, Brand = "Audi", Model = "A4" }
+            new Car { Id = 2, Brand = "Audi", Model = "A4" },
+            new Car { Id = 3, Brand = "Mercedes", Model = "C200" },
+            new Car { Id = 4, Brand = "Volkswagen", Model = "Passat" },
+            new Car { Id = 5, Brand = "Toyota", Model = "Camry" },
+            new Car { Id = 6, Brand = "Honda", Model = "Accord" }
         };
 
         [HttpGet]
